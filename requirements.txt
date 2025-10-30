@@ -1,0 +1,10 @@
+langchain
+langchain-community
+openai
+PyPDF2
+faiss-cpu
+tqdm
+python-dotenv
+streamlit
+requests
+
