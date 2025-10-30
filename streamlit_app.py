@@ -10,7 +10,7 @@ from qa_agent import generate_summary, generate_insights, generate_mcq, answer_q
 
 # -------------------------- Page Config --------------------------
 st.set_page_config(
-    page_title="RAG Document Analyzer — Piyush",
+    page_title="RAG Document Analyzer — Piyush Bansal",
     layout="wide",
     page_icon="📊",
     initial_sidebar_state="expanded"
@@ -228,4 +228,4 @@ with tabs[3]:
         st.info("No downloadable content yet. Run an action first!")
 
 st.markdown("---")
-st.caption("💡 Created by **Piyush** | ✨ Powered by OpenAI | 🧩 Enhanced with Streamlit Interactive UI")
+st.caption("💡 Created by **Piyush Bansal** | ✨ Powered by OpenAI | 🧩 Enhanced with Streamlit Interactive UI")
