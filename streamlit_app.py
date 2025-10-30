@@ -1,5 +1,5 @@
 # streamlit_app.py
-# Advanced Streamlit app for RAG Document Analyzer by Vikas
+# Advanced Streamlit app for RAG Document Analyzer by Piyush
 # Modern UI + Interactive Features + Professional Design
 
 import streamlit as st
@@ -10,7 +10,7 @@ from qa_agent import generate_summary, generate_insights, generate_mcq, answer_q
 
 # -------------------------- Page Config --------------------------
 st.set_page_config(
-    page_title="RAG Document Analyzer — Vikas",
+    page_title="RAG Document Analyzer — Piyush",
     layout="wide",
     page_icon="📊",
     initial_sidebar_state="expanded"
@@ -20,35 +20,59 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    body { background: linear-gradient(135deg, #f0f4f8, #dce3f0); }
-    .main { background-color: rgba(255,255,255,0.9); border-radius: 12px; padding: 1.5rem; }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body {
+        background-color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        color: #222222;
+    }
+    .main {
+        background-color: #f7f7f7;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
     .stButton>button {
-        background-color: #0078FF;
+        background: linear-gradient(90deg, #4A90E2 0%, #357ABD 100%);
         color: white;
         border: none;
         border-radius: 10px;
         padding: 0.7em 1.5em;
-        font-weight: 600;
-        transition: 0.3s;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        transition: background 0.3s ease, transform 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #005FCC;
-        transform: scale(1.02);
+        background: linear-gradient(90deg, #357ABD 0%, #2A5EAA 100%);
+        transform: scale(1.05);
     }
     .stDownloadButton>button {
-        background-color: #2ECC71;
+        background: linear-gradient(90deg, #4A90E2 0%, #357ABD 100%);
         color: white;
         border-radius: 10px;
         padding: 0.6em 1.4em;
-        transition: 0.3s;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        transition: background 0.3s ease, transform 0.3s ease;
     }
     .stDownloadButton>button:hover {
-        background-color: #239B56;
-        transform: scale(1.03);
+        background: linear-gradient(90deg, #357ABD 0%, #2A5EAA 100%);
+        transform: scale(1.05);
     }
-    .block-container { padding-top: 1.5rem; }
-    h1, h2, h3 { color: #004E98; }
-    .emoji { font-size: 1.3em; }
+    .block-container {
+        padding-top: 2rem;
+    }
+    h1, h2, h3 {
+        color: #111111;
+        font-weight: 700;
+    }
+    .emoji {
+        font-size: 1.3em;
+    }
+    .stSidebar {
+        background-color: #f7f7f7;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -81,7 +105,7 @@ with st.sidebar:
 # -------------------------- Header --------------------------
 col1, col2 = st.columns([8, 2])
 with col1:
-    st.title("🚀 RAG Document Analyzer — Vikas")
+    st.title("🚀 RAG Document Analyzer — Piyush")
     st.caption("Empowering teams with AI-driven document intelligence 💬")
 with col2:
     st.image("https://static.streamlit.io/images/brand/streamlit-mark-color.png", width=70)
@@ -204,4 +228,4 @@ with tabs[3]:
         st.info("No downloadable content yet. Run an action first!")
 
 st.markdown("---")
-st.caption("💡 Created by **Vikas** | ✨ Powered by OpenAI | 🧩 Enhanced with Streamlit Interactive UI")
+st.caption("💡 Created by **Piyush** | ✨ Powered by OpenAI | 🧩 Enhanced with Streamlit Interactive UI")
